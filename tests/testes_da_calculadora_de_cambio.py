@@ -56,3 +56,12 @@ class TestesDaCalculadoraDeCambio(TestCase):
         resultado_obtido = calc.converter(valor, taxa)
 
         self.assertEqual(resultado_obtido, resultado_esperado)
+
+    def teste_conversao_cambio_valor_35_10_taxa_5_05_retorna_6_95(self):
+        valor = 35.10
+        taxa = 5.05
+        resultado_esperado = 6.95
+
+        resultado_obtido = calc.converter(valor, taxa)
+
+        self.assertEqual(resultado_obtido, resultado_esperado)
